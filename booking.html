@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Boutique Hotels in Sri Lanka | The Ceylon Collection </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="icon" type="image/jpg" href="images/logo.jpg">
+</head>
+
+<body>
+
+    <!-- fixed header containing logo which links to the home page on click, navigation links and a call to action button for booking -->
+
+    <header class="header">
+
+        <a href="index.html">
+            <figure class="logo">
+                <img src="images/logo.jpg" alt="The Ceylon Collection Logo">
+            </figure>
+        </a>
+
+        <input type="header_checkbox" id="menu">
+        <label for="header_menu"> Menu </label>
+
+        <nav class="nav_bar">
+            <ul>
+                <li> <a href="index.html"> Home </a> </li>
+                <li> <a href="branches.html"> Branches </a> </li>
+                <li> <a href="adventures.html"> Adventures </a> </li>
+                <li> <a href="restaurants.html"> Restaurants &#x25BE; </a>
+
+                    <!-- a drop down navigation menu linking to two event pages, wedding and meeting -->
+
+                    <ul class="dropdown_nav">
+                        <li> <a href="wedding.html"> Weddings </a> </li>
+                        <li> <a href="meeting.html"> Meetings </a> </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <a class="primary_btn" href="booking.html"> Book Now </a>
+
+    </header>
+
+    <main>
+
+        <!-- main image for booking page -->
+
+        <div class="booking_main">
+            <h1> Bookings </h1>
+        </div>
+
+        <!-- personal information form -->
+
+        <section class="booking_container">
+            <h2> Personal information </h2>
+
+            <form class="booking_form">
+
+                <div class="personal_info">
+
+                    <div class="input_box">
+                        <h3> First name </h3>
+                        <input type="text" placeholder="Enter your first name" required>
+                    </div>
+
+                    <div class="input_box">
+                        <h3> Last name </h3>
+                        <input type="text" placeholder="Enter your last name" required>
+                    </div>
+
+                    <div class="input_box">
+                        <h3> Email </h3>
+                        <input type="email" placeholder="Enter your email" required>
+                    </div>
+
+                    <div class="input_box">
+                        <h3> Phone number </h3>
+                        <input type="tel" placeholder="Enter your phone number" required>
+                    </div>
+
+                    <div class="nationality_box">
+                        <h3> Nationality </h3>
+                        <select name="nationality" required>
+                            <option value="Sri Lankan">Sri Lankan</option>
+                            <option value="Foreigner">Foreigner</option>
+                        </select>
+
+                    </div>
+
+                </div>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <!-- booking information form  -->
+
+    <form class="form_container">
+        <h2> Booking information </h2>
+
+        <fieldset>
+            <h3> Branch Name </h3>
+
+            <div class="form_row">
+
+                <div class="form_radio">
+                    <label>
+                        <input type="radio" name="branch" value="Nuwara Eliya"> Nuwara Eliya
+                    </label>
+                </div>
+
+                <div class="form_radio">
+                    <label>
+                        <input type="radio" name="branch" value="Tissamaharama"> Tissamaharama
+                    </label>
+                </div>
+
+                <div class="form_radio">
+                    <label>
+                        <input type="radio" name="branch" value="Galle"> Galle
+                    </label>
+                </div>
+
+            </div>
+
+            <h3> Booking Date </h3>
+
+            <div class="form_row">
+
+                <div class="form_box">
+                    <label> Check-in: </label>
+                    <input type="date" placeholder="dd/mm/yyyy" name="checkin" required>
+                </div>
+
+                <div class="form_box">
+                    <label>Check-out:</label>
+                    <input type="date" placeholder="dd/mm/yyyy" name="checkout" required>
+                </div>
+
+            </div>
+
+
+            <h3> Room Information </h3>
+
+            <div class="form_row">
+
+                <div class="form_box">
+                    <label> Number of adults:</label>
+                    <input type="number" placeholder="Enter a value between 1 and 10" name="adult" min="1" max="10"
+                        value="1" required>
+                </div>
+
+                <div class="form_box">
+                    <label>Number of children:</label>
+                    <input type="number" placeholder="Enter a value between 1 and 10" name="children" min="1" max="10"
+                        value="1" required>
+                </div>
+
+                <div class="form_select">
+                    <label>Room:</label>
+                    <select name="room" required>
+                        <option value="Single Room">Single Room</option>
+                        <option value="Double Room">Double Room</option>
+                        <option value="Triple Room">Triple Room</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <h3>Adventures </h3>
+
+            <div class="form_row">
+
+                <div class="form_check">
+                    <label>
+                        <input type="checkbox" name="adventures[]" value="Horse Riding"> Horse Riding
+                    </label>
+                </div>
+
+                <div class="form_check">
+                    <label>
+                        <input type="checkbox" name="adventures[]" value="Jungle Safari"> Jungle Safari </label>
+                </div>
+
+                <div class="form_check">
+                    <label>
+                        <input type="checkbox" name="adventures[]" value="River Safari"> River Safari
+                    </label>
+                </div>
+
+                <div class="form_check">
+                    <label>
+                        <input type="checkbox" name="adventures[]" value="Hiking">
+                        Hiking</label>
+                </div>
+
+                <div class="form_check">
+                    <label>
+                        <input type="checkbox" name="adventures[]" value="Bird Watching">
+                        Bird Watching</label>
+                </div>
+
+                <div class="form_check">
+                    <label>
+                        <input type="checkbox" name="adventures[]" value="Whale and Dolphin Watching">
+                        Whale & Dolphin Watching</label>
+                </div>
+
+            </div>
+
+            <h3> Mention any additional requirements </h3>
+
+            <div class="form_area">
+                <textarea name="message" rows="5" cols="50"></textarea>
+            </div>
+
+        </fieldset>
+
+        <div class="button_row">
+
+            <div class="form_btn">
+                <input type="submit" value="Book with us">
+            </div>
+
+            <div class="form_btn"></div>
+            <input type="reset" value="Clear Booking">
+        </div>
+
+    </form>
+
+    </div>
+
+    </main>
+
+    <!-- footer section containing branch details, contact details, subscription form, copyright details and author -->
+
+    <footer class="footer">
+
+        <div class="footer_row">
+
+            <div class="footer_column">
+                <h1> Our branches </h1> <br>
+                <hr> <br>
+                <ul>
+                    <li> Nuwara Eliya </li>
+                    <li> Tissamaharama </li>
+                    <li> Galle </li>
+                </ul>
+            </div>
+
+            <div class="footer_column">
+                <h1> Contact us </h1> <br>
+                <hr> <br>
+                <ul>
+                    <li> <a href="mailto:info@ceylon.lk"> info@ceyloncollection.lk </a> </li> <br>
+                    <li> <a href="tel:+94 77 888 8888"> +94 77 888 8888 </a></li>
+                </ul>
+            </div>
+
+            <div class="footer_column">
+                <h1> Subscribe to our newsletter </h1> <br>
+                <hr> <br>
+                <form>
+                    <input type="email" placeholder="Enter your email" name="email" required> <br>
+                    <input type="submit" value="Subscribe">
+                </form>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="footer_row">
+
+            <div class="footer_column">
+                <p> &copy; 2023 The Ceylon Collection. All rights reserved </p>
+            </div>
+
+            <div class="footer_column">
+                <p> Web design & concept by Fathima Salma Muzammil </p>
+            </div>
+
+        </div>
+
+        <!-- references 
+     Accommodation (no date). Available at: https://www.jetwinghotels.com/jetwingviluyana/accommodation/.  -->
+
+    </footer>
+</body>
+
+</html>
