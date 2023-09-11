@@ -189,15 +189,6 @@ a {
   color: var(--white-colour);
 }
 
-.menu {
-  display: none;
-}
-
-header label {
-  display: none;
-
-}
-
 /* footer */
 
 @media (max-width: 768px) {
