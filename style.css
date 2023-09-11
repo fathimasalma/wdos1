@@ -920,6 +920,8 @@ input[type="reset"]:hover {
 
 /* media queries */
 
+/* header */
+
 @media (max-width: 768px) {
   .header {
     padding: 10px 20px;
@@ -927,15 +929,17 @@ input[type="reset"]:hover {
   }
 
   .header .logo img {
-    width: 60px;
+    margin-left: -40px;
+    width: 30px;
   }
 
   .nav_bar ul li {
+    margin-left: -30px;
     padding: 20px;
   }
 
   .nav_bar ul li a {
-    font-size: 14px;
+    font-size: 8px;
   }
 
   .nav_bar .dropdown_nav li {
@@ -943,8 +947,8 @@ input[type="reset"]:hover {
   }
 
   .header .primary_btn {
-    font-size: 14px;
-    margin-top: 20px;
+    font-size: 8px;
+    margin-top: 30px;
   }
 }
 
@@ -1095,7 +1099,7 @@ input[type="reset"]:hover {
 
   .branch_content {
     flex-direction: column;
-    height: 1050px;
+    height: 1250px;
   }
 }
 
@@ -1152,11 +1156,11 @@ input[type="reset"]:hover {
 /* adventures and fun activities around the hotel */
 
 @media screen and (max-width: 768px) {
-  .adventures_card {
+  .adventures_row {
     display: flex;
+    margin:0;
     flex-direction: column;
-    width: 100%;
-    max-width: 450px;
+    max-width: 100%;
     height: auto;
   }
 
@@ -1196,18 +1200,23 @@ input[type="reset"]:hover {
   }
 
   .restaurants_card {
+    flex-wrap: wrap;
+    height: 1000px;
     width: 100%;
     margin: 20px 0;
   }
 
   .restaurants_card img {
-    width: 100%;
+    position: relative;
+    top: -10px;
+    width: 80%;
     height: auto;
     margin-top: 0;
-    margin-left: 0;
+    margin-left: 30px;
   }
 
   .restaurants_content {
+    width: 100%;
     padding: 20px;
   }
 

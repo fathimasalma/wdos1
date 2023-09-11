@@ -259,6 +259,10 @@
   }
 }
 
+.wedding_intro{
+  display: flex;
+}
+
 .wedding_image img {
     width: 550px;
     height: 500px;
@@ -412,15 +416,17 @@
   }
 
   .header .logo img {
-    width: 60px;
+    margin-left: -40px;
+    width: 30px;
   }
 
   .nav_bar ul li {
+    margin-left: -30px;
     padding: 20px;
   }
 
   .nav_bar ul li a {
-    font-size: 14px;
+    font-size: 8px;
   }
 
   .nav_bar .dropdown_nav li {
@@ -428,10 +434,11 @@
   }
 
   .header .primary_btn {
-    font-size: 14px;
-    margin-top: 20px;
+    font-size: 8px;
+    margin-top: 30px;
   }
 }
+
 
 /* footer */
 
@@ -480,6 +487,10 @@
 /* wedding introduction */
 
 @media screen and (max-width: 780px) {
+
+  .wedding_intro{
+    flex-direction: column;
+  }
   .wedding_image img {
     width: 100%;
     height: auto;
