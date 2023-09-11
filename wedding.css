@@ -248,24 +248,6 @@
 
 /* wedding introduction */
 
-@media(max-width:480px){
-  .wedding_intro{
-    flex-direction: column;
-    margin: 20px;
-  }
-}
-
-.wedding_intro {
-    display: flex;
-    flex-direction: row;
-    margin: 40px;
-}
-
-.wedding_image {
-    padding: 20px;
-    animation: image 1s ease-in-out forwards; 
-}
-
 @keyframes image{
   from {
       transform: scale(0.8); 
@@ -418,3 +400,149 @@
     text-align: center;
     padding-top: 200px;
 }
+
+/* media queries */
+
+/* header */
+
+@media (max-width: 768px) {
+  .header {
+    padding: 10px 20px;
+    height: 80px;
+  }
+
+  .header .logo img {
+    width: 60px;
+  }
+
+  .nav_bar ul li {
+    padding: 20px;
+  }
+
+  .nav_bar ul li a {
+    font-size: 14px;
+  }
+
+  .nav_bar .dropdown_nav li {
+    padding: 10px 20px;
+  }
+
+  .header .primary_btn {
+    font-size: 14px;
+    margin-top: 20px;
+  }
+}
+
+/* footer */
+
+@media (max-width: 768px) {
+  .footer_row {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer_column {
+    margin-bottom: 20px;
+  }
+
+  .footer_column h1 {
+    font-size: 24px;
+  }
+
+  .footer_column ul li a {
+    font-size: 14px;
+  }
+
+  .footer_column input[type="email"] {
+    font-size: 14px;
+  }
+
+  .footer_column input[type="submit"] {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+
+  .footer_column p {
+    font-size: 14px;
+  }
+}
+
+/* wedding main image */
+
+@media screen and (max-width: 780px) {
+  .wedding_main h1 {
+    padding: 150px;
+    margin-left: 50px;
+  }
+}
+
+/* wedding introduction */
+
+@media screen and (max-width: 780px) {
+  .wedding_image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .wedding_content {
+    padding: 20px;
+  }
+
+  .wedding_content h2 {
+    font-size: 24px;
+    padding-bottom: 20px;
+  }
+
+  .wedding_content .secondary_btn {
+    padding-left: 10px;
+  }
+}
+
+/* wedding themes */
+
+@media screen and (max-width: 780px) {
+  .themes_box {
+      grid-template-columns: repeat(1, 1fr);
+  }
+
+  .themes_title,
+  .themes_subtitle,
+  .themes_card {
+      padding: 10px;
+      text-align: center;
+  }
+
+  .themes_card {
+      height: auto;
+  }
+
+  .themes_card:nth-child(2) {
+      transform: none;
+  }
+
+  .themes_image::after {
+      height: 30%;
+  }
+
+  .themes_content .secondary_btn {
+      margin-left: 0;
+      margin-top: 10px;
+  }
+}
+
+/* wedding testimonal */
+
+@media screen and (max-width: 780px) {
+  .wedding_testimonial {
+      height: 300px; 
+      padding-top: 100px; 
+  }
+
+  .wedding_testimonial h3 {
+      font-size: 24px; 
+      padding-top: 100px; 
+  }
+}
+
+
