@@ -407,10 +407,12 @@
 
 /* media queries */
 
+
 /* header */
 
 @media (max-width: 768px) {
   .header {
+    width: 100%;
     padding: 10px 20px;
     height: 80px;
   }
@@ -426,19 +428,24 @@
   }
 
   .nav_bar ul li a {
-    font-size: 8px;
+    font-size: 7px;
   }
 
   .nav_bar .dropdown_nav li {
-    padding: 10px 20px;
+    padding: 0px;
+  }
+
+  .nav_bar .dropdown_nav li a{
+    font-size: 8px;
+    padding: 5px;
+    text-align: center;
   }
 
   .header .primary_btn {
-    font-size: 8px;
+    font-size: 7px;
     margin-top: 30px;
   }
 }
-
 
 /* footer */
 
@@ -479,8 +486,9 @@
 
 @media screen and (max-width: 780px) {
   .wedding_main h1 {
-    padding: 150px;
-    margin-left: 50px;
+    padding: 200px;
+    margin-left: -40px;
+    font-size: 30px;
   }
 }
 
@@ -497,6 +505,7 @@
   }
 
   .wedding_content {
+    width: 90%;
     padding: 20px;
   }
 
@@ -506,7 +515,8 @@
   }
 
   .wedding_content .secondary_btn {
-    padding-left: 10px;
+    padding-left: 0px;
+    text-align: center;
   }
 }
 
@@ -520,11 +530,12 @@
   .themes_title,
   .themes_subtitle,
   .themes_card {
-      padding: 10px;
+    width: 80%;
       text-align: center;
   }
 
   .themes_card {
+    width: 80%;
       height: auto;
   }
 
@@ -546,8 +557,9 @@
 
 @media screen and (max-width: 780px) {
   .wedding_testimonial {
-      height: 300px; 
-      padding-top: 100px; 
+    margin-top: 100px;
+    width: 80%;
+      height: 500px;
   }
 
   .wedding_testimonial h3 {
